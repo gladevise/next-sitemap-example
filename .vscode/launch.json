@@ -7,23 +7,24 @@
     {
       "type": "node-terminal",
       "request": "launch",
-      "name": "Next.js: debug server-side",
+      "name": "serverside-sitemap debug server-side",
       "command": "npm run dev",
       // "webRoot": "${workspaceFolder}/serverside-sitemap"
       // "localRoot": "${workspaceFolder}/serverside-sitemap"
       "cwd": "${workspaceFolder}/serverside-sitemap"
     },
     {
-      "name": "Next.js: debug client-side",
+      "name": "serverside-sitemap debug client-side",
       "type": "pwa-chrome",
       "request": "launch",
       "url": "http://localhost:3000"
     },
     {
-      "name": "Next.js: debug full stack",
+      "name": "serverside-sitemap debug full stack",
       "type": "node-terminal",
       "request": "launch",
       "command": "npm run dev",
+      "cwd": "${workspaceFolder}/serverside-sitemap",
       "console": "integratedTerminal",
       "serverReadyAction": {
         "pattern": "started server on .+, url: (https?://.+)",
